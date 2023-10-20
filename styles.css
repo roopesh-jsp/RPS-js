@@ -2,9 +2,12 @@
 body {
     background-color: black;
     color: white;
+   
     font-family: 'poppins';
 }
-
+.body{
+    filter: blur(20px);
+}
 .heading {
     text-align: center;
     font-size: 50px;
@@ -79,4 +82,34 @@ img {
 .comp{
     position: relative;
     right:5px;
+}
+.start{
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%); 
+    z-index: 1;  
+    border: 5px solid #fff;
+    
+}
+
+.start h2{
+    margin-bottom: 1px;
+}
+.start p{
+    display: inline-block;
+    margin-bottom: 25px;
+}
+.start button{
+    border-radius: 10px;
+    padding: 7px;
+    width: 100px;
+    align-self: center;
+    font-size: 15px;
+    font-weight: 900;
 }
