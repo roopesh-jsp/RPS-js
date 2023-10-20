@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+body {
+    background-color: black;
+    color: white;
+    font-family: 'poppins';
+}
+
+.heading {
+    text-align: center;
+    font-size: 50px;
+}
+
+.rock {
+    border-radius: 5px;
+}
+
+.main-container {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    justify-content: center;
+    height: 40vh;
+    width: 100%;
+
+}
+
+.sub-container {
+    cursor: pointer;
+
+
+}
+
+img {
+    width: 20vw;
+    object-fit: contain;
+    height: 30vh;
+}
+
+.js-score {
+    text-align: center;
+    font-size: 40px;
+}
+
+.reset-btn {
+    position: relative;
+    height: 50px;
+    width: 150px;
+    left: 44%;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.computer{
+    width: 100vw;
+    text-align: center;
+    font-size: 20px;
+}
+.display{
+    display: flex;
+    justify-content: space-around;
+}
+.display h2{
+    font-size: 35px;
+}
+.display p{
+    text-align: center;
+    font-size: 27px;
+}
+.result{
+    position: relative;
+    left:30px;
+}
+.human{
+    position: relative;
+    left:10px;
+}
+.comp{
+    position: relative;
+    right:5px;
+}
