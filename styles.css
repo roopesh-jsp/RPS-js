@@ -5,9 +5,7 @@ body {
    
     font-family: 'poppins';
 }
-.body{
-    filter: blur(20px);
-}
+
 .heading {
     text-align: center;
     font-size: 50px;
@@ -94,8 +92,24 @@ img {
     left:50%;
     transform: translate(-50%,-50%); 
     z-index: 1;  
-    border: 5px solid #fff;
+    border: 5px solid #fff;   
+}
+.backblur{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
     
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+.start input{
+    padding-left: 10px;
+}
+.start input:focus{
+    outline: none;
 }
 
 .start h2{
@@ -112,4 +126,5 @@ img {
     align-self: center;
     font-size: 15px;
     font-weight: 900;
+    cursor: pointer;
 }

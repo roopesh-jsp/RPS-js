@@ -12,6 +12,22 @@ const reset=document.querySelector(".reset-btn");
 const humanopt=document.querySelector(".humanopt");
 const result=document.querySelector(".result");
 const compopt=document.querySelector(".compopt");
+const button=document.querySelector(".start button");
+
+button.addEventListener("click",function(){
+    const name=document.querySelector(".start input").value;
+    if(!name)
+    {
+        alert("Enter name!");
+    }
+    else{
+       
+        const namedis=document.querySelector(".human h2").innerHTML=`${name} 🙍‍♂️`;
+        const start=document.querySelector(".backblur").style.display = "none";
+    }
+    
+
+});
 hScore.textContent=`Score : ${hscore}`;
     cScore.textContent=`score : ${cscore}`;
 rock.addEventListener('click',function(){
