@@ -13,6 +13,8 @@ const humanopt=document.querySelector(".humanopt");
 const result=document.querySelector(".result");
 const compopt=document.querySelector(".compopt");
 const button=document.querySelector(".start button");
+let name=document.querySelector(".start input");
+
 
 button.addEventListener("click",function(){
     const name=document.querySelector(".start input").value;
@@ -49,7 +51,7 @@ rock.addEventListener('click',function(){
         hscore+=1;
     }
     hScore.textContent=`Score : ${hscore}`;
-    cScore.textContent=`scre : ${cscore}`;
+    cScore.textContent=`score : ${cscore}`;
 
 });
 paper.addEventListener('click',function(){
