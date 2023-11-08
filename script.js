@@ -1,5 +1,6 @@
 "use strict";
 //rock--1 paper--2 scissor--3
+let hiscore=0;
 let hscore=0;
 let cscore=0;
 const hScore=document.querySelector(".humanScore");
@@ -14,8 +15,6 @@ const result=document.querySelector(".result");
 const compopt=document.querySelector(".compopt");
 const button=document.querySelector(".start button");
 let name=document.querySelector(".start input");
-
-
 button.addEventListener("click",function(){
     const name=document.querySelector(".start input").value;
     if(!name)
@@ -100,10 +99,23 @@ scissor.addEventListener('click',function(){
     cScore.textContent=`score : ${cscore}`;
 
 });
-
+let temp=0;
 reset.addEventListener('click',function(){
+    temp=hscore;
     hscore=0;
     cscore=0;
     hScore.textContent=`Score : ${hscore}`;
     cScore.textContent=`score : ${cscore}`;
+    if(temp>hiscore)
+    {
+        hiscore=temp;
+    }
+    highscore.textContent=`High score : ${hiscore}`;
+
 });
+
+let highscore= document.createElement("h2");
+highscore.textContent=`High score : ${hiscore}`;
+const body=document.querySelector(".body");
+body.insertBefore(highscore,reset);
+highscore.style.textAlign=center;
